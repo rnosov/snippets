@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[/*
+ * ${TM_FILENAME/(.*)-test[.](.*)/$1/g} Component Test Suite
+ *
+ * Copyright © Roman Nosov 2016
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+import React from 'react';
+import ${TM_FILENAME/(.*)-test[.](.*)/$1/g} from '../${TM_FILENAME/(.*)-test[.](.*)/$1/g}';
+import renderer from 'react-test-renderer';
+
+describe('${TM_FILENAME/(.*)-test[.](.*)/$1/g}', () => {
+
+  beforeEach( () => {
+
+  });
+
+  it('renders a initial view', () => {
+    const instance = renderer.create(<${TM_FILENAME/(.*)-test[.](.*)/$1/g} />);
+    const tree = instance.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+});]]></content>
+</snippet>

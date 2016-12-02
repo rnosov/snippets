@@ -1,0 +1,30 @@
+<snippet>
+  <content><![CDATA[/*
+ * ${TM_FILENAME/(.*)[.](.*)/$1/g} Higher Order React Component
+ *
+ * Copyright © Roman Nosov 2016
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+import React, { Component, PropTypes } from 'react';
+
+const
+  propTypes = {
+
+  },
+  defaultProps = {
+
+  };
+
+
+let ${TM_FILENAME/(.*)[.](.*)/$1/g} = ComposedComponent => class extends Component {
+  render() {
+    return <ComposedComponent {...this.props} />;
+  }
+}
+
+${TM_FILENAME/(.*)[.](.*)/$1/g}.propTypes = propTypes;
+${TM_FILENAME/(.*)[.](.*)/$1/g}.defaultProps = defaultProps;
+export default ${TM_FILENAME/(.*)[.](.*)/$1/g};]]></content>
+</snippet>

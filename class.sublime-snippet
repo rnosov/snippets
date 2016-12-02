@@ -1,0 +1,43 @@
+<snippet>
+  <content><![CDATA[/*
+ * ${TM_FILENAME/(.*)[.](.*)/$1/g} React Component
+ *
+ * Copyright © Roman Nosov 2016
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+import React, { Component, PropTypes } from 'react';
+
+const
+  propTypes = {
+
+  },
+  defaultProps = {
+
+  };
+
+class ${TM_FILENAME/(.*)[.](.*)/$1/g} extends Component {
+  render() {
+    const { children, ...props } = this.props;
+    return(
+      <div {...props}>
+        <strong>${TM_FILENAME/(.*)[.](.*)/$1/g}</strong>
+        ${1:
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        }
+      </div>
+      {children}
+    );
+  }
+}
+
+${TM_FILENAME/(.*)[.](.*)/$1/g}.propTypes = propTypes;
+${TM_FILENAME/(.*)[.](.*)/$1/g}.defaultProps = defaultProps;
+export default ${TM_FILENAME/(.*)[.](.*)/$1/g};]]></content>
+</snippet>

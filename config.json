@@ -1,0 +1,36 @@
+{
+
+    // A default initial value to fill the create new file input path with.
+    "default_initial": "",
+    "default_extension": ".js",
+    "alias_root": "project_folder",
+    "file_templates": {"md":[
+    	"~/Documents/snippets/md.sublime-snippet",    	    	
+    ],
+	"html":[
+    	"~/Documents/snippets/html.sublime-snippet",    	    	
+    ],
+    "js":[
+        "~/Documents/snippets/function.sublime-snippet",               
+        "~/Documents/snippets/class.sublime-snippet",               
+        "~/Documents/snippets/test.sublime-snippet",               
+        "~/Documents/snippets/util.sublime-snippet",               
+    ]},
+
+    "alias": {
+        "c":  "components/",
+        "cn": "components/navigation/",
+        "ca": "components/auto/",
+        "p":  "pages/",
+        "pa": "pages/articles/",
+        "pc": "pages/contact/",
+        "ps": "pages/shop/",
+        "u": "utils/",
+        "s": "src/",
+        "st": "src/__tests__/"
+    },
+
+
+    // When specifying initial input, this boolean will place the cursor prior to the .<content>
+    "cursor_before_extension": true
+}
